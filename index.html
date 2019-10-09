@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+<div class="container-fluid bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html" >
+            <img src="image/Bille1.jpg">
+        </a>
+
+        <button class="navbar-toggler btn-secoundary" type="button" data-toggle="collapse" data-target="#navbarContent">
+            <span class="navbar-toggler-icon btn-primary"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent"> <!--collapse.navbar-collapse: for grouping and hiding navbar contents by a parent breakpoint.-->
+            <ul class="navbar-nav ml-4">
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Forside</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Om os</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Produkter</a>
+
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Produkter 1</a>
+                        <a href="#" class="dropdown-item">Produkter 2</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Produkter 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <div class="jumbotron">
+        <img src="image/rjiojrijg.jpg">
+        <h1 class="display-4">Få det hele, til det halve</h1>
+        <p class="lead">til den dobblete pris</p>
+        <p class="lead">
+            <a href="#" class="btn btn-primary btn-lg" role="button">CTA KNAP</a>
+        </p>
+    </div>
+
+    <div class="row pt-lg-5">
+        <div class="col-12 col-md-4">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">kort title</h5>
+                    <p>Dette er en kort tekst lavet i Bootstrap</p>
+                    <a href="#" class="card-link">Tryk på mig</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-12 col-md-4 mt-4 mt-md-0">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">kort title</h5>
+                    <p>Dette er en kort tekst lavet i Bootstrap</p>
+                    <a href="#" class="card-link">Tryk på mig</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-12 col-md-4 mt-4 mt-md-0">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">kort title</h5>
+                    <p>Dette er en kort tekst lavet i Bootstrap</p>
+                    <a href="#" class="card-link">Tryk på mig</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12 col-md-8">
+            <h3 class="text-center text-md-left">vigtig overskrift</h3>
+            <p class="lead">lorem ipsum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem excepturi fugit inventore ullam vitae! Aliquam, beatae blanditiis doloremque eaque et, ex impedit incidunt laborum nostrum odio placeat quidem unde vitae?</p>
+        </div>
+        <div class="col-12 col-md-4">
+            <h3 class="text-center text-md-left">submenu</h3>
+            <ul class="nav flex-column nav-pills">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Menupunkt1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Menupunkt2</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Menupunkt3</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function (e) {
+    });
+</script>
+</body>
+</html>
